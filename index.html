@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquesitas Yucatán | Tradición que se enrolla</title>
+    <meta name="description" content="Marquesitas artesanales y Nevado Yucatán en Chinchiná, Caldas. Crujientes por fuera, irresistibles por dentro.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0d0907;
+            color: #f3f4f6;
+        }
+        .font-serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-card {
+            background: linear-gradient(145deg, rgba(28, 19, 13, 0.95), rgba(15, 10, 7, 0.98));
+            border: 1px solid rgba(224, 159, 62, 0.3);
+        }
+        .gold-pill {
+            background: rgba(35, 23, 15, 0.85);
+            border: 1px solid rgba(224, 159, 62, 0.4);
+        }
+        .img-zoom {
+            transition: transform 0.4s ease;
+        }
+        .img-zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0d0907]/90 border-b border-amber-900/30">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full border-2 border-amber-500/60 overflow-hidden shrink-0 shadow-md">
+                    <img src="logo.png" alt="Marquesitas Yucatán Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=MY';">
+                </div>
+                <div>
+                    <h1 class="font-serif-title text-lg md:text-xl font-bold text-white leading-tight group-hover:text-amber-400 transition">
+                        Marquesitas <span class="text-amber-400">Yucatán</span>
+                    </h1>
+                    <p class="text-[10px] md:text-xs text-amber-300/80 tracking-wider uppercase font-semibold">Tradición que se enrolla</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#menu" class="hover:text-amber-400 transition">Menú</a>
+                <a href="#galeria" class="hover:text-amber-400 transition">Fotos</a>
+                <a href="#ingredientes" class="hover:text-amber-400 transition">Ingredientes</a>
+                <a href="#contacto" class="hover:text-amber-400 transition">Ubicación</a>
+            </nav>
+
+            <a href="https://wa.me/573113481171?text=Hola,%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20Marquesitas" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold text-xs md:text-sm px-4 py-2.5 rounded-full transition flex items-center gap-2 shadow-lg">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <span>Pedir por WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow space-y-16 py-8">
+
+        <!-- HERO -->
+        <section class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 text-center md:text-left">
+                <div class="gold-pill inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-amber-300">
+                    <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Chinchiná, Caldas · Hechas al momento</span>
+                </div>
+
+                <h2 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Crujientes por fuera,<br><span class="text-amber-400">irresistibles por dentro</span>
+                </h2>
+
+                <p class="font-serif-title italic text-amber-200/90 text-lg sm:text-xl font-normal">
+                    "Dulce, salado y crujiente en cada bocado."
+                </p>
+
+                <p class="text-gray-300 text-sm sm:text-base max-w-lg leading-relaxed font-light">
+                    Marquesitas artesanales preparadas al instante con queso holandés rallado, salsas especiales, toppings y frutas frescas.
+                </p>
+
+                <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#menu" class="bg-amber-500 hover:bg-amber-400 text-black font-extrabold px-6 py-3.5 rounded-xl transition shadow-lg text-center text-sm">
+                        Ver Menú & Precios
+                    </a>
+                    <a href="#galeria" class="gold-pill hover:bg-amber-500/10 text-white font-medium px-6 py-3.5 rounded-xl transition text-center text-sm">
+                        Ver Galería de Fotos
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative max-w-md mx-auto md:max-w-none w-full">
+                <div class="relative overflow-hidden rounded-3xl border-2 border-amber-500/40 shadow-2xl gold-card p-2">
+                    <img src="marquesita2.jpg" alt="Marquesita con salsa de chocolate y fresas" class="w-full h-[320px] sm:h-[400px] object-cover rounded-2xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=800';">
+                </div>
+            </div>
+        </section>
+
+        <!-- MENÚ DE OPCIONES -->
+        <section id="menu" class="max-w-6xl mx-auto px-4 space-y-8">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Nuestra Carta</span>
+                <h3 class="font-serif-title text-3xl sm:text-4xl font-bold text-white">Menú de Marquesitas & Nevados</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- ESPECIAL -->
+                <div class="gold-card p-6 rounded-2xl flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="bg-emerald-600 text-white font-bold text-xs uppercase px-3 py-1 rounded-full inline-block mb-3">Especial</span>
+                        <h4 class="font-serif-title text-2xl font-bold text-white">Marquesita Especial</h4>
+                        <p class="text-3xl font-extrabold text-amber-400 my-2"><span id="precio-esp">$14.000</span> COP</p>
+                        <p class="text-xs text-gray-300 mb-3">Incluye:</p>
+                        <ul class="text-xs text-gray-300 space-y-2 font-light border-t border-amber-900/40 pt-3">
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 2 frutas a elección</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 1 salsa a elección</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> Queso rallado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="gold-card p-6 rounded-2xl flex flex-col justify-between space-y-4 border-amber-500/60 shadow-xl">
+                    <div>
+                        <span class="bg-amber-500 text-black font-extrabold text-xs uppercase px-3 py-1 rounded-full inline-block mb-3">★ Premium</span>
+                        <h4 class="font-serif-title text-2xl font-bold text-white">Marquesita Premium</h4>
+                        <p class="text-3xl font-extrabold text-amber-400 my-2"><span id="precio-prem">$16.000</span> COP</p>
+                        <p class="text-xs text-gray-300 mb-3">Incluye:</p>
+                        <ul class="text-xs text-gray-300 space-y-2 font-light border-t border-amber-900/40 pt-3">
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 3 frutas a elección</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 2 salsas a elección</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> Queso rallado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NEVADO YUCATÁN -->
+                <div class="gold-card p-6 rounded-2xl flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="bg-sky-500 text-black font-extrabold text-xs uppercase px-3 py-1 rounded-full inline-block mb-3">Especial de la Casa</span>
+                        <h4 class="font-serif-title text-2xl font-bold text-white">Nevado Yucatán</h4>
+                        <p class="text-3xl font-extrabold text-amber-400 my-2"><span id="precio-nev">$15.000</span> COP</p>
+                        <p class="text-xs text-gray-300 mb-3">Incluye:</p>
+                        <ul class="text-xs text-gray-300 space-y-2 font-light border-t border-amber-900/40 pt-3">
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 1 Base (Nutella/Arequipe)</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> 1 Fruta + 1 Salsa</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400 font-bold">✓</span> Helado & Queso rallado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="max-w-6xl mx-auto px-4 space-y-6">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Inspiración</span>
+                <h3 class="font-serif-title text-3xl font-bold text-white">Galería de Preparaciones</h3>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita1.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita2.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita3.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita4.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita5.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita6.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="nevado1.jpg" alt="Nevado" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600';"></div>
+                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="nevado2.jpg" alt="Nevado" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600';"></div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE INGREDIENTES EDITABLE -->
+        <section id="ingredientes" class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="gold-pill p-6 rounded-2xl space-y-4 md:col-span-2">
+                <h4 class="font-serif-title font-bold text-xl text-amber-400">Ingredientes para Armar tu Marquesita</h4>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                    <div>
+                        <h5 class="font-bold text-white uppercase tracking-wider mb-2">🍓 Frutas</h5>
+                        <ul id="lista-frutas" class="space-y-1 text-gray-300 font-light">
+                            <li>• Fresa</li>
+                            <li>• Banano</li>
+                            <li>• Mango</li>
+                            <li>• Durazno</li>
+                            <li>• Piña</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold text-white uppercase tracking-wider mb-2">🍫 Relleno Base</h5>
+                        <p class="text-[10px] text-amber-200/60 mb-1">(Siempre lleva queso)</p>
+                        <ul id="lista-rellenos" class="space-y-1 text-gray-300 font-light">
+                            <li>• Nutella</li>
+                            <li>• Arequipe</li>
+                            <li>• Mantequilla maní</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold text-white uppercase tracking-wider mb-2">🍯 Salsas</h5>
+                        <ul id="lista-salsas" class="space-y-1 text-gray-300 font-light">
+                            <li>• Pistacho</li>
+                            <li>• Chocolate</li>
+                            <li>• Arequipe</li>
+                            <li>• Caramelo salado</li>
+                            <li>• Maracuyá</li>
+                            <li>• Leche condensada</li>
+                            <li>• Frutos rojos</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold text-white uppercase tracking-wider mb-1">🍪 Toppings</h5>
+                        <span id="precio-toppings-header" class="text-[10px] text-amber-400 font-bold block mb-1">$2.000 c/u</span>
+                        <ul id="lista-toppings" class="space-y-1 text-gray-300 font-light">
+                            <li>• Oreo</li>
+                            <li>• Chips chocolate</li>
+                            <li>• Coco rallado</li>
+                            <li>• Maní</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="gold-card p-5 rounded-2xl space-y-2">
+                    <h5 class="font-bold text-green-400 uppercase tracking-wider text-xs">➕ Adiciones</h5>
+                    <ul class="space-y-1 text-xs text-gray-300">
+                        <li class="flex justify-between"><span>Fruta adicional</span> <b id="adic-fruta" class="text-amber-400">$2.000</b></li>
+                        <li class="flex justify-between"><span>Salsa adicional</span> <b id="adic-salsa" class="text-amber-400">$1.000</b></li>
+                        <li class="flex justify-between"><span>Topping adicional</span> <b id="adic-topping" class="text-amber-400">$2.000</b></li>
+                        <li class="flex justify-between"><span>Queso adicional</span> <b id="adic-queso" class="text-amber-400">$2.000</b></li>
+                    </ul>
+                </div>
+
+                <div class="gold-card p-5 rounded-2xl space-y-2">
+                    <h5 class="font-bold text-sky-400 uppercase tracking-wider text-xs">🥤 Bebidas</h5>
+                    <ul id="lista-bebidas" class="space-y-1 text-xs text-gray-300">
+                        <li class="flex justify-between"><span>Agua en botella</span> <b class="text-amber-400">$1.500</b></li>
+                        <li class="flex justify-between"><span>Jugo Hit en caja</span> <b class="text-amber-400">$3.000</b></li>
+                        <li class="flex justify-between"><span>Coca-Cola</span> <b class="text-amber-400">$4.000</b></li>
+                        <li class="flex justify-between"><span>Soda</span> <b class="text-amber-400">$3.000</b></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="max-w-4xl mx-auto px-4">
+            <div class="gold-card p-8 rounded-3xl text-center space-y-6 border-amber-500/40">
+                <h3 class="font-serif-title font-bold text-2xl sm:text-3xl text-amber-400">Visítanos o Escríbenos</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs sm:text-sm text-gray-300 pt-2">
+                    <div class="space-y-1">
+                        <span class="text-2xl block">📍</span>
+                        <strong class="text-white block text-sm">Dirección</strong>
+                        <p>Calle 19 # 8-09, Rincón Campestre<br>Chinchiná, Caldas</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-2xl block">📲</span>
+                        <strong class="text-white block text-sm">Teléfono / WhatsApp</strong>
+                        <p class="text-amber-400 font-bold">311 348 1171</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-2xl block">✨</span>
+                        <strong class="text-white block text-sm">Redes Sociales</strong>
+                        <p class="text-amber-300">Instagram: @marquesitas_yucatan</p>
+                        <p class="text-amber-300">Facebook: Diana Mejía</p>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <a href="https://wa.me/573113481171?text=Hola,%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20Marquesitas" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-extrabold px-8 py-4 rounded-2xl transition shadow-lg text-base">
+                        <span>Contactar por WhatsApp ahora</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VENTANA DE LOGIN DE CONTRASEÑA -->
+    <div id="modal-pass" class="fixed inset-0 bg-black/85 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+        <div class="gold-card border border-amber-500/50 w-full max-w-xs rounded-2xl p-5 shadow-2xl space-y-3 text-center">
+            <h3 class="font-serif-title font-bold text-base text-amber-400">🔐 Acceso Administrador</h3>
+            <p class="text-xs text-gray-400">Ingresa la clave para editar la página</p>
+            <input type="password" id="input-pass" placeholder="Contraseña" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-3 py-2 text-white font-bold text-center focus:outline-none focus:border-amber-400 text-sm">
+            <div class="flex gap-2 pt-1">
+                <button onclick="validarPassword()" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-2 rounded-xl transition text-xs">Entrar</button>
+                <button onclick="cerrarPassModal()" class="w-full gold-pill hover:bg-amber-500/10 text-white font-medium py-2 rounded-xl transition text-xs">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL ADMINISTRADOR COMPLETO MODAL -->
+    <div id="modal-admin" class="fixed inset-0 bg-black/85 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4 overflow-y-auto">
+        <div class="gold-card border border-amber-500/50 w-full max-w-lg rounded-2xl p-6 shadow-2xl space-y-4 my-8 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-amber-900/40 pb-3 sticky top-0 bg-[#160d09] z-10 pt-1">
+                <h3 class="font-serif-title font-bold text-lg text-amber-400">⚙️ Panel Administrador</h3>
+                <button onclick="cerrarAdminModal()" class="text-gray-400 hover:text-white font-bold text-lg">✕</button>
+            </div>
+            
+            <div class="space-y-4 text-xs">
+                <!-- PRECIOS PRINCIPALES -->
+                <div class="space-y-2 border-b border-amber-900/30 pb-3">
+                    <h4 class="font-bold text-amber-300 uppercase">Precios Principales</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="text-gray-400 block mb-1">Especial:</label>
+                            <input type="text" id="input-esp" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white font-bold">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Premium:</label>
+                            <input type="text" id="input-prem" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white font-bold">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Nevado:</label>
+                            <input type="text" id="input-nev" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white font-bold">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDITAR LISTAS -->
+                <div class="grid grid-cols-2 gap-3 border-b border-amber-900/30 pb-3">
+                    <div>
+                        <label class="text-amber-300 font-bold block mb-1">Frutas (separadas por coma):</label>
+                        <textarea id="input-frutas" rows="3" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg p-2 text-white"></textarea>
+                    </div>
+                    <div>
+                        <label class="text-amber-300 font-bold block mb-1">Salsas (separadas por coma):</label>
+                        <textarea id="input-salsas" rows="3" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg p-2 text-white"></textarea>
+                    </div>
+                </div>
+
+                <!-- TOPPINGS -->
+                <div class="space-y-2 border-b border-amber-900/30 pb-3">
+                    <h4 class="font-bold text-amber-300 uppercase">Toppings & Su Precio</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="col-span-2">
+                            <label class="text-gray-400 block mb-1">Toppings (separados por coma):</label>
+                            <input type="text" id="input-toppings" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Precio c/u:</label>
+                            <input type="text" id="input-precio-topping" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white font-bold">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADICIONES -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-green-400 uppercase">Precios de Adiciones</h4>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div>
+                            <label class="text-gray-400 block mb-1">Fruta adic.:</label>
+                            <input type="text" id="input-adic-fruta" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2 py-1 text-white font-bold">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Salsa adic.:</label>
+                            <input type="text" id="input-adic-salsa" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2 py-1 text-white font-bold">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Topping adic.:</label>
+                            <input type="text" id="input-adic-topping" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2 py-1 text-white font-bold">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 block mb-1">Queso adic.:</label>
+                            <input type="text" id="input-adic-queso" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2 py-1 text-white font-bold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-3 flex gap-3 sticky bottom-0 bg-[#160d09] pb-1">
+                <button onclick="guardarTodoAdmin()" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-2.5 rounded-xl transition text-xs">
+                    Guardar Cambios
+                </button>
+                <button onclick="cerrarAdminModal()" class="w-full gold-pill hover:bg-amber-500/10 text-white font-medium py-2.5 rounded-xl transition text-xs">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-amber-900/30 py-6 text-center text-xs text-amber-200/50 space-y-2">
+        <p>© Marquesitas Yucatán · Chinchiná, Caldas · Tradición que se enrolla</p>
+        <div>
+            <button onclick="abrirPassModal()" class="text-[10px] text-amber-500/40 hover:text-amber-400 transition underline">
+                🔐 Panel Administrador
+            </button>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE NAVEGACIÓN Y PANEL -->
+    <script>
+        window.onload = function() {
+            cargarDatosGuardados();
+        };
+
+        function abrirPassModal() {
+            document.getElementById('input-pass').value = '';
+            document.getElementById('modal-pass').classList.remove('hidden');
+        }
+
+        function cerrarPassModal() {
+            document.getElementById('modal-pass').classList.add('hidden');
+        }
+
+        function validarPassword() {
+            let pass = document.getElementById('input-pass').value;
+            if (pass === "admin123") {
+                cerrarPassModal();
+                
+                // Cargar los valores actuales en el formulario del panel
+                document.getElementById('input-esp').value = document.getElementById('precio-esp').innerText;
+                document.getElementById('input-prem').value = document.getElementById('precio-prem').innerText;
+                document.getElementById('input-nev').value = document.getElementById('precio-nev').innerText;
+
+                document.getElementById('input-frutas').value = obtenerTextoLista('lista-frutas');
+                document.getElementById('input-salsas').value = obtenerTextoLista('lista-salsas');
+                document.getElementById('input-toppings').value = obtenerTextoLista('lista-toppings');
+                document.getElementById('input-precio-topping').value = document.getElementById('precio-toppings-header').innerText;
+
+                document.getElementById('input-adic-fruta').value = document.getElementById('adic-fruta').innerText;
+                document.getElementById('input-adic-salsa').value = document.getElementById('adic-salsa').innerText;
+                document.getElementById('input-adic-topping').value = document.getElementById('adic-topping').innerText;
+                document.getElementById('input-adic-queso').value = document.getElementById('adic-queso').innerText;
+
+                document.getElementById('modal-admin').classList.remove('hidden');
+            } else {
+                alert("Contraseña incorrecta.");
+            }
+        }
+
+        function cerrarAdminModal() {
+            document.getElementById('modal-admin').classList.add('hidden');
+        }
+
+        function obtenerTextoLista(idUl) {
+            let lis = document.getElementById(idUl).getElementsByTagName('li');
+            let arr = [];
+            for (let li of lis) {
+                arr.push(li.innerText.replace('• ', '').trim());
+            }
+            return arr.join(', ');
+        }
+
+        function actualizarListaDesdeTexto(idUl, textoCSV) {
+            let ul = document.getElementById(idUl);
+            ul.innerHTML = '';
+            let items = textoCSV.split(',');
+            items.forEach(item => {
+                if (item.trim() !== '') {
+                    ul.innerHTML += `<li>• ${item.trim()}</li>`;
+                }
+            });
+        }
+
+        function guardarTodoAdmin() {
+            let esp = document.getElementById('input-esp').value;
+            let prem = document.getElementById('input-prem').value;
+            let nev = document.getElementById('input-nev').value;
+
+            document.getElementById('precio-esp').innerText = esp;
+            document.getElementById('precio-prem').innerText = prem;
+            document.getElementById('precio-nev').innerText = nev;
+
+            localStorage.setItem('precio_esp', esp);
+            localStorage.setItem('precio_prem', prem);
+            localStorage.setItem('precio_nev', nev);
+
+            let frutas = document.getElementById('input-frutas').value;
+            let salsas = document.getElementById('input-salsas').value;
+            let toppings = document.getElementById('input-toppings').value;
+            let precioTopping = document.getElementById('input-precio-topping').value;
+
+            actualizarListaDesdeTexto('lista-frutas', frutas);
+            actualizarListaDesdeTexto('lista-salsas', salsas);
+            actualizarListaDesdeTexto('lista-toppings', toppings);
+            document.getElementById('precio-toppings-header').innerText = precioTopping;
+
+            localStorage.setItem('lista_frutas', frutas);
+            localStorage.setItem('lista_salsas', salsas);
+            localStorage.setItem('lista_toppings', toppings);
+            localStorage.setItem('precio_topping', precioTopping);
+
+            let adicF = document.getElementById('input-adic-fruta').value;
+            let adicS = document.getElementById('input-adic-salsa').value;
+            let adicT = document.getElementById('input-adic-topping').value;
+            let adicQ = document.getElementById('input-adic-queso').value;
+
+            document.getElementById('adic-fruta').innerText = adicF;
+            document.getElementById('adic-salsa').innerText = adicS;
+            document.getElementById('adic-topping').innerText = adicT;
+            document.getElementById('adic-queso').innerText = adicQ;
+
+            localStorage.setItem('adic_fruta', adicF);
+            localStorage.setItem('adic_salsa', adicS);
+            localStorage.setItem('adic_topping', adicT);
+            localStorage.setItem('adic_queso', adicQ);
+
+            cerrarAdminModal();
+            alert("¡Página actualizada con éxito!");
+        }
+
+        function cargarDatosGuardados() {
+            if (localStorage.getItem('precio_esp')) document.getElementById('precio-esp').innerText = localStorage.getItem('precio_esp');
+            if (localStorage.getItem('precio_prem')) document.getElementById('precio-prem').innerText = localStorage.getItem('precio_prem');
+            if (localStorage.getItem('precio_nev')) document.getElementById('precio-nev').innerText = localStorage.getItem('precio_nev');
+
+            if (localStorage.getItem('lista_frutas')) actualizarListaDesdeTexto('lista-frutas', localStorage.getItem('lista_frutas'));
+            if (localStorage.getItem('lista_salsas')) actualizarListaDesdeTexto('lista-salsas', localStorage.getItem('lista_salsas'));
+            if (localStorage.getItem('lista_toppings')) actualizarListaDesdeTexto('lista-toppings', localStorage.getItem('lista_toppings'));
+            if (localStorage.getItem('precio_topping')) document.getElementById('precio-toppings-header').innerText = localStorage.getItem('precio_topping');
+
+            if (localStorage.getItem('adic_fruta')) document.getElementById('adic-fruta').innerText = localStorage.getItem('adic_fruta');
+            if (localStorage.getItem('adic_salsa')) document.getElementById('adic-salsa').innerText = localStorage.getItem('adic_salsa');
+            if (localStorage.getItem('adic_topping')) document.getElementById('adic-topping').innerText = localStorage.getItem('adic_topping');
+            if (localStorage.getItem('adic_queso')) document.getElementById('adic-queso').innerText = localStorage.getItem('adic_queso');
+        }
+    </script>
+</body>
+</html>
