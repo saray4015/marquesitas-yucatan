@@ -161,22 +161,15 @@
             </div>
         </section>
 
-        <!-- GALERÍA -->
+        <!-- GALERÍA DINÁMICA DE FOTOS -->
         <section id="galeria" class="max-w-6xl mx-auto px-4 space-y-6">
             <div class="text-center max-w-xl mx-auto space-y-2">
                 <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Inspiración</span>
                 <h3 class="font-serif-title text-3xl font-bold text-white">Galería de Preparaciones</h3>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita1.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita2.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita3.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita4.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita5.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="marquesita6.jpg" alt="Marquesita" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="nevado1.jpg" alt="Nevado" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600';"></div>
-                <div class="gold-card p-2 rounded-2xl overflow-hidden"><img src="nevado2.jpg" alt="Nevado" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600';"></div>
+            <div id="galeria-fotos" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <!-- Se llena mediante JavaScript -->
             </div>
         </section>
 
@@ -246,7 +239,7 @@
 
                 <div class="gold-card p-5 rounded-2xl space-y-2">
                     <h5 class="font-bold text-sky-400 uppercase tracking-wider text-xs">🥤 Bebidas</h5>
-                    <ul id="lista-bebidas" class="space-y-1 text-xs text-gray-300">
+                    <ul class="space-y-1 text-xs text-gray-300">
                         <li class="flex justify-between"><span>Agua en botella</span> <b class="text-amber-400">$1.500</b></li>
                         <li class="flex justify-between"><span>Jugo Hit en caja</span> <b class="text-amber-400">$3.000</b></li>
                         <li class="flex justify-between"><span>Coca-Cola</span> <b class="text-amber-400">$4.000</b></li>
@@ -256,8 +249,8 @@
             </div>
         </section>
 
-        <!-- CONTACTO -->
-        <section id="contacto" class="max-w-4xl mx-auto px-4">
+        <!-- CONTACTO & MAPA EN VIVO -->
+        <section id="contacto" class="max-w-5xl mx-auto px-4 space-y-8">
             <div class="gold-card p-8 rounded-3xl text-center space-y-6 border-amber-500/40">
                 <h3 class="font-serif-title font-bold text-2xl sm:text-3xl text-amber-400">Visítanos o Escríbenos</h3>
 
@@ -282,7 +275,12 @@
                     </div>
                 </div>
 
-                <div class="pt-4">
+                <!-- GOOGLE MAPS EMBED EN TIEMPO REAL -->
+                <div class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-xl mt-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7661002241517!2d-75.6080!3d4.9810!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e47565b00000001%3A0x0!2zQ2FsbGUgMTkgIzggMDksIENoaW5jaGluw6EsIENhbGRhcw!5e0!3m2!1ses!2sco!4v1650000000000!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="pt-2">
                     <a href="https://wa.me/573113481171?text=Hola,%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20Marquesitas" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-extrabold px-8 py-4 rounded-2xl transition shadow-lg text-base">
                         <span>Contactar por WhatsApp ahora</span>
                     </a>
@@ -314,6 +312,7 @@
             </div>
             
             <div class="space-y-4 text-xs">
+
                 <!-- PRECIOS PRINCIPALES -->
                 <div class="space-y-2 border-b border-amber-900/30 pb-3">
                     <h4 class="font-bold text-amber-300 uppercase">Precios Principales</h4>
@@ -331,6 +330,13 @@
                             <input type="text" id="input-nev" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg px-2.5 py-1.5 text-white font-bold">
                         </div>
                     </div>
+                </div>
+
+                <!-- GESTIÓN DE GALERÍA DE IMÁGENES -->
+                <div class="space-y-2 border-b border-amber-900/30 pb-3">
+                    <h4 class="font-bold text-amber-300 uppercase">🖼️ Galería de Fotos (Quitar / Agregar)</h4>
+                    <p class="text-[10px] text-gray-400">Escribe los nombres de los archivos o enlaces URL de imágenes separados por coma:</p>
+                    <textarea id="input-galeria-fotos" rows="3" class="w-full bg-[#0d0907] border border-amber-500/40 rounded-lg p-2 text-white font-mono text-[11px]"></textarea>
                 </div>
 
                 <!-- EDITAR LISTAS -->
@@ -407,6 +413,8 @@
 
     <!-- SCRIPT DE NAVEGACIÓN Y PANEL -->
     <script>
+        const galeriaDefecto = ['marquesita1.jpg', 'marquesita2.jpg', 'marquesita3.jpg', 'marquesita4.jpg', 'marquesita5.jpg', 'marquesita6.jpg', 'nevado1.jpg', 'nevado2.jpg'];
+
         window.onload = function() {
             cargarDatosGuardados();
         };
@@ -425,10 +433,12 @@
             if (pass === "admin123") {
                 cerrarPassModal();
                 
-                // Cargar los valores actuales en el formulario del panel
                 document.getElementById('input-esp').value = document.getElementById('precio-esp').innerText;
                 document.getElementById('input-prem').value = document.getElementById('precio-prem').innerText;
                 document.getElementById('input-nev').value = document.getElementById('precio-nev').innerText;
+
+                let fotos = localStorage.getItem('galeria_fotos') ? localStorage.getItem('galeria_fotos') : galeriaDefecto.join(', ');
+                document.getElementById('input-galeria-fotos').value = fotos;
 
                 document.getElementById('input-frutas').value = obtenerTextoLista('lista-frutas');
                 document.getElementById('input-salsas').value = obtenerTextoLista('lista-salsas');
@@ -470,6 +480,23 @@
             });
         }
 
+        function renderizarGaleria(fotosCSV) {
+            let contenedor = document.getElementById('galeria-fotos');
+            contenedor.innerHTML = '';
+            let listaFotos = fotosCSV.split(',');
+            
+            listaFotos.forEach(foto => {
+                let url = foto.trim();
+                if (url !== '') {
+                    contenedor.innerHTML += `
+                        <div class="gold-card p-2 rounded-2xl overflow-hidden">
+                            <img src="${url}" alt="Foto Galería Marquesitas" class="w-full h-48 md:h-56 object-cover rounded-xl img-zoom" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600';">
+                        </div>
+                    `;
+                }
+            });
+        }
+
         function guardarTodoAdmin() {
             let esp = document.getElementById('input-esp').value;
             let prem = document.getElementById('input-prem').value;
@@ -482,6 +509,10 @@
             localStorage.setItem('precio_esp', esp);
             localStorage.setItem('precio_prem', prem);
             localStorage.setItem('precio_nev', nev);
+
+            let galeriaTexto = document.getElementById('input-galeria-fotos').value;
+            renderizarGaleria(galeriaTexto);
+            localStorage.setItem('galeria_fotos', galeriaTexto);
 
             let frutas = document.getElementById('input-frutas').value;
             let salsas = document.getElementById('input-salsas').value;
@@ -522,6 +553,10 @@
             if (localStorage.getItem('precio_prem')) document.getElementById('precio-prem').innerText = localStorage.getItem('precio_prem');
             if (localStorage.getItem('precio_nev')) document.getElementById('precio-nev').innerText = localStorage.getItem('precio_nev');
 
+            let fotosGuardadas = localStorage.getItem('galeria_fotos') ? localStorage.getItem('galeria_fotos') : galeriaDefecto.join(', ');
+            renderizarGaleria(fotosGuardadas);
+
+            if (localStorage.getItem('lista_frutas')) actualizarListaDatosGuardados = actualizarListaDesdeTexto('lista-frutas', localStorage.getItem('lista_frutas'));
             if (localStorage.getItem('lista_frutas')) actualizarListaDesdeTexto('lista-frutas', localStorage.getItem('lista_frutas'));
             if (localStorage.getItem('lista_salsas')) actualizarListaDesdeTexto('lista-salsas', localStorage.getItem('lista_salsas'));
             if (localStorage.getItem('lista_toppings')) actualizarListaDesdeTexto('lista-toppings', localStorage.getItem('lista_toppings'));
